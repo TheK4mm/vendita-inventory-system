@@ -1,7 +1,11 @@
 ## Arquitectura
 
 ```
+<<<<<<< HEAD
 vendita-app/
+=======
+tienda-app/
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 ├── backend/                  # Node.js + Express
 │   ├── config/
 │   │   ├── db.postgres.js    # Conexión PostgreSQL (autenticación)
@@ -154,6 +158,7 @@ Authorization: Bearer <token>
 
 ---
 
+<<<<<<< HEAD
 ## 🆕 Módulos agregados (extensión)
 
 Se añadieron sobre la base existente, sin reestructurar ni romper la lógica original.
@@ -244,3 +249,9 @@ el header `Authorization: Bearer <token>`.
    finalizar se abre la factura PDF automáticamente; usa "📄 Reimprimir" para volver
    a abrirla.
 4. **Caja:** *Caja* → verás el saldo acumulado, el histórico y el botón *Descargar PDF*.
+=======
+## 👤 Camilo
+Proyecto académico desarrollado con arquitectura híbrida (SQL + NoSQL), API REST y frontend moderno en React.
+
+---
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978

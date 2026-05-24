@@ -33,6 +33,7 @@ api.interceptors.response.use(
 
 // ── Auth ──────────────────────────────────────────────────────────────────
 export const authAPI = {
+<<<<<<< HEAD
   register:       (data) => api.post('/auth/register', data),
   login:          (data) => api.post('/auth/login', data),
   perfil:         ()     => api.get('/auth/perfil'),
@@ -67,6 +68,11 @@ export const ventasAPI = {
 export const cajaAPI = {
   resumen:   ()  => api.get('/caja'),
   reporte:   ()  => api.get('/caja/reporte', { responseType: 'blob' }),
+=======
+  register: (data) => api.post('/auth/register', data),
+  login:    (data) => api.post('/auth/login', data),
+  perfil:   ()     => api.get('/auth/perfil'),
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 };
 
 // ── Productos ─────────────────────────────────────────────────────────────

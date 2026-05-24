@@ -22,6 +22,7 @@ const Navbar = () => {
       <div style={styles.navInner}>
         {/* Logo */}
         <Link to="/productos" style={styles.logo}>
+<<<<<<< HEAD
           <span style={styles.logoIcon}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -29,11 +30,15 @@ const Navbar = () => {
               <path d="M16 10a4 4 0 01-8 0"/>
             </svg>
           </span>
+=======
+          <span style={styles.logoIcon}>🛍️</span>
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
           <span style={styles.logoText}>VenditaApp</span>
         </Link>
 
         {/* Links desktop */}
         <div style={styles.links}>
+<<<<<<< HEAD
           <Link to="/productos" style={{ ...styles.link, ...(isActive('/productos') ? styles.linkActive : {}) }}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -76,6 +81,19 @@ const Navbar = () => {
               <line x1="2" y1="20" x2="22" y2="20"/>
             </svg>
             Dashboard
+=======
+          <Link
+            to="/productos"
+            style={{ ...styles.link, ...(isActive('/productos') ? styles.linkActive : {}) }}
+          >
+            📦 Productos
+          </Link>
+          <Link
+            to="/dashboard"
+            style={{ ...styles.link, ...(isActive('/dashboard') ? styles.linkActive : {}) }}
+          >
+            📊 Dashboard
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
           </Link>
         </div>
 
@@ -86,17 +104,22 @@ const Navbar = () => {
             <span style={styles.userName}>{usuario?.nombre}</span>
           </div>
           <button onClick={handleLogout} style={styles.logoutBtn}>
+<<<<<<< HEAD
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
               <polyline points="16 17 21 12 16 7"/>
               <line x1="21" y1="12" x2="9" y2="12"/>
             </svg>
             Salir
+=======
+            🚪 Salir
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
           </button>
         </div>
 
         {/* Menú hamburguesa (mobile) */}
         <button style={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+<<<<<<< HEAD
           {menuOpen ? (
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="18" y1="6" x2="6" y2="18"/>
@@ -109,12 +132,16 @@ const Navbar = () => {
               <line x1="3" y1="18" x2="21" y2="18"/>
             </svg>
           )}
+=======
+          {menuOpen ? '✕' : '☰'}
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
         </button>
       </div>
 
       {/* Menú mobile */}
       {menuOpen && (
         <div style={styles.mobileMenu}>
+<<<<<<< HEAD
           <Link to="/productos" style={styles.mobileLink} onClick={() => setMenuOpen(false)}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -166,6 +193,11 @@ const Navbar = () => {
             </svg>
             Cerrar Sesión
           </button>
+=======
+          <Link to="/productos" style={styles.mobileLink} onClick={() => setMenuOpen(false)}>📦 Productos</Link>
+          <Link to="/dashboard" style={styles.mobileLink} onClick={() => setMenuOpen(false)}>📊 Dashboard</Link>
+          <button onClick={handleLogout} style={styles.mobileLinkBtn}>🚪 Cerrar Sesión</button>
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
         </div>
       )}
     </nav>
@@ -195,11 +227,18 @@ const styles = {
     textDecoration: 'none', color: '#fff',
     fontSize: '1.125rem', fontWeight: 800,
   },
+<<<<<<< HEAD
   logoIcon: { display: 'flex', alignItems: 'center' },
   logoText: { background: 'linear-gradient(135deg,#6366F1,#8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' },
   links: { display: 'flex', gap: '.25rem' },
   link: {
     display: 'flex', alignItems: 'center', gap: '.375rem',
+=======
+  logoIcon: { fontSize: '1.5rem' },
+  logoText: { background: 'linear-gradient(135deg,#6366F1,#8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' },
+  links: { display: 'flex', gap: '.25rem' },
+  link: {
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     padding: '.5rem .875rem', borderRadius: 8,
     textDecoration: 'none', color: '#94A3B8',
     fontSize: '.875rem', fontWeight: 500,
@@ -216,7 +255,10 @@ const styles = {
   },
   userName: { color: '#CBD5E1', fontSize: '.875rem', fontWeight: 500 },
   logoutBtn: {
+<<<<<<< HEAD
     display: 'flex', alignItems: 'center', gap: '.375rem',
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     background: 'rgba(220,38,38,.15)', color: '#FCA5A5',
     border: '1px solid rgba(220,38,38,.3)', borderRadius: 8,
     padding: '.4rem .875rem', cursor: 'pointer',
@@ -224,7 +266,11 @@ const styles = {
   },
   hamburger: {
     display: 'none', background: 'none', border: 'none',
+<<<<<<< HEAD
     color: '#fff', cursor: 'pointer', padding: '.25rem',
+=======
+    color: '#fff', fontSize: '1.5rem', cursor: 'pointer',
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     '@media(max-width:768px)': { display: 'block' },
   },
   mobileMenu: {
@@ -233,13 +279,19 @@ const styles = {
     padding: '.75rem 1.5rem',
   },
   mobileLink: {
+<<<<<<< HEAD
     display: 'flex', alignItems: 'center', gap: '.5rem',
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     color: '#94A3B8', textDecoration: 'none',
     padding: '.75rem 0', borderBottom: '1px solid #334155',
     fontSize: '.9375rem',
   },
   mobileLinkBtn: {
+<<<<<<< HEAD
     display: 'flex', alignItems: 'center', gap: '.5rem',
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     background: 'none', border: 'none', cursor: 'pointer',
     color: '#FCA5A5', textAlign: 'left', padding: '.75rem 0',
     fontSize: '.9375rem',

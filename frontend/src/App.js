@@ -7,11 +7,14 @@ import Login    from './pages/Login';
 import Register from './pages/Register';
 import Productos from './pages/Productos';
 import Dashboard from './pages/Dashboard';
+<<<<<<< HEAD
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Clientes from './pages/Clientes';
 import Ventas from './pages/Ventas';
 import Caja from './pages/Caja';
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 import './styles/global.css';
 
 function App() {
@@ -35,18 +38,26 @@ function App() {
         />
         <Routes>
           {/* Rutas públicas */}
+<<<<<<< HEAD
           <Route path="/login"            element={<Login />} />
           <Route path="/register"         element={<Register />} />
           <Route path="/forgot-password"  element={<ForgotPassword />} />
           <Route path="/reset-password"   element={<ResetPassword />} />
+=======
+          <Route path="/login"    element={<Login />} />
+          <Route path="/register" element={<Register />} />
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 
           {/* Rutas privadas */}
           <Route element={<PrivateRoute />}>
             <Route path="/productos" element={<Productos />} />
             <Route path="/dashboard" element={<Dashboard />} />
+<<<<<<< HEAD
             <Route path="/clientes"  element={<Clientes />} />
             <Route path="/ventas"    element={<Ventas />} />
             <Route path="/caja"      element={<Caja />} />
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
           </Route>
 
           {/* Redirecciones */}

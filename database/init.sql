@@ -36,6 +36,7 @@ VALUES (
   'admin'
 ) ON CONFLICT (email) DO NOTHING;
 
+<<<<<<< HEAD
 -- ── Tabla de tokens de recuperación de contraseña ─────────────
 CREATE TABLE IF NOT EXISTS password_resets (
   id         SERIAL PRIMARY KEY,
@@ -48,6 +49,8 @@ CREATE TABLE IF NOT EXISTS password_resets (
 
 CREATE INDEX IF NOT EXISTS idx_password_resets_token ON password_resets (token_hash);
 
+=======
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 -- ── Verificación ──────────────────────────────────────────────
 SELECT 'Tabla usuarios creada correctamente ✓' AS resultado;
 SELECT id, nombre, email, rol, activo FROM usuarios;

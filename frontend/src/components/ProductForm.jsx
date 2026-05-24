@@ -63,6 +63,7 @@ const ProductForm = ({ visible, producto, onClose, onSave }) => {
     <div className="modal-overlay" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <div className="modal-box">
         <div className="modal-header">
+<<<<<<< HEAD
           <h3 className="modal-title" style={{ display: 'flex', alignItems: 'center', gap: '.5rem' }}>
             {isEdit ? (
               <>
@@ -79,6 +80,10 @@ const ProductForm = ({ visible, producto, onClose, onSave }) => {
           <button className="btn-close" onClick={onClose}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
+=======
+          <h3 className="modal-title">{isEdit ? '✏️ Editar Producto' : '➕ Nuevo Producto'}</h3>
+          <button className="btn-close" onClick={onClose}>✕</button>
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
         </div>
 
         <form onSubmit={handleSubmit} noValidate>
@@ -137,9 +142,15 @@ const ProductForm = ({ visible, producto, onClose, onSave }) => {
             <div className="form-group">
               <label className="form-label">Estado</label>
               <select name="estado" value={form.estado} onChange={handleChange} className="form-control">
+<<<<<<< HEAD
                 <option value="activo">Activo</option>
                 <option value="inactivo">Inactivo</option>
                 <option value="agotado">Agotado</option>
+=======
+                <option value="activo">✅ Activo</option>
+                <option value="inactivo">⚫ Inactivo</option>
+                <option value="agotado">🔴 Agotado</option>
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
               </select>
             </div>
 
@@ -167,6 +178,7 @@ const ProductForm = ({ visible, producto, onClose, onSave }) => {
             <button type="submit" className="btn btn-primary" disabled={loading}>
               {loading
                 ? <><span className="spinner" style={{ width: '.9rem', height: '.9rem', borderWidth: 2 }} /> Guardando...</>
+<<<<<<< HEAD
                 : isEdit ? (
                   <>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
@@ -178,6 +190,9 @@ const ProductForm = ({ visible, producto, onClose, onSave }) => {
                     Crear Producto
                   </>
                 )}
+=======
+                : isEdit ? '💾 Actualizar' : '✓ Crear Producto'}
+>>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
             </button>
           </div>
         </form>
