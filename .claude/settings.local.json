@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\juank\\\\product-management-store\\\\frontend\\\\src\" -Recurse | Where-Object { $_.Extension -in '.tsx', '.jsx', '.ts', '.js', '.css', '.scss' } | Select-Object FullName)"
-    ]
-  }
-}
