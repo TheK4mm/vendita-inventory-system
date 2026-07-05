@@ -153,7 +153,7 @@ Authorization: Bearer <token>
 ```
 
 ---
-## 🆕 Módulos agregados (extensión)
+## Módulos agregados (extensión)
 
 Se añadieron sobre la base existente, sin reestructurar ni romper la lógica original.
 
@@ -182,7 +182,7 @@ Se añadieron sobre la base existente, sin reestructurar ni romper la lógica or
 
 ---
 
-## 🔧 Variables de entorno adicionales
+## Variables de entorno adicionales
 
 Agrega al `.env` del backend (todas opcionales):
 
@@ -205,7 +205,7 @@ MAX_PDF_MB=5
 VENTA_IVA_PORCENTAJE=0        # 0 por defecto; usar 19 para Colombia, etc.
 ```
 
-## 📡 Endpoints adicionales
+## Endpoints adicionales
 
 ```
 POST   /api/auth/forgot-password    → Solicita correo de recuperación
@@ -247,4 +247,3 @@ el header `Authorization: Bearer <token>`.
 
 
 ---
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978

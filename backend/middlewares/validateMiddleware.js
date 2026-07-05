@@ -56,7 +56,6 @@ const validarProducto = [
     .isLength({ max: 500 }).withMessage('La descripción no puede superar 500 caracteres'),
 ];
 
-<<<<<<< HEAD
 // ── Validaciones de recuperación de contraseña ─────────────────────────────
 const validarForgot = [
   body('email')
@@ -132,6 +131,3 @@ module.exports = {
   validarCliente,
   validarVenta,
 };
-=======
-module.exports = { validarRegistro, validarLogin, validarProducto };
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978

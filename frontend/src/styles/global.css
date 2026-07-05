@@ -243,7 +243,6 @@ tbody tr:hover { background: var(--surface-2); }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .hide-mobile { display: none !important; }
 }
-<<<<<<< HEAD
 
 /* ── Auth Pages ───────────────────────────────────── */
 .auth-page { display: flex; min-height: 100vh; }
@@ -359,5 +358,3 @@ tbody tr:hover { background: var(--surface-2); }
   .auth-form-side { padding: 1.5rem 1rem; }
   .auth-form-title { font-size: 1.5rem; }
 }
-=======
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
