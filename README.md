@@ -58,6 +58,14 @@ Aplicación web fullstack para administrar el inventario de una tienda. Permite 
 
 ---
 
+# Vista de la aplicación
+
+[Login de usuario](docs/screenshots/login-vendita.png)
+[Dashboard](docs/screenshots/vendita-dashboard.png)
+[Sección de productos](docs/screenshots/seccion-productos.png)
+[Sección de caja](docs/screenshots/seccion-caja.png)
+
+---
 ## ¿Qué hace esta aplicación?
 
 1. El usuario se registra o inicia sesión (datos guardados en PostgreSQL).
