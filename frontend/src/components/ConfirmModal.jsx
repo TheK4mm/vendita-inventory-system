@@ -6,7 +6,6 @@ const ConfirmModal = ({ visible, producto, onConfirm, onCancel, loading }) => {
     <div className="modal-overlay">
       <div className="modal-box" style={{ maxWidth: 420 }}>
         <div style={{ padding: '2rem', textAlign: 'center' }}>
-<<<<<<< HEAD
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DC2626" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="3 6 5 6 21 6"/>
@@ -15,9 +14,6 @@ const ConfirmModal = ({ visible, producto, onConfirm, onCancel, loading }) => {
               <path d="M9 6V4h6v2"/>
             </svg>
           </div>
-=======
-          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🗑️</div>
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
           <h3 style={{ marginBottom: '.5rem', fontSize: '1.125rem', fontWeight: 700 }}>
             ¿Eliminar producto?
           </h3>
@@ -32,7 +28,6 @@ const ConfirmModal = ({ visible, producto, onConfirm, onCancel, loading }) => {
             <button className="btn btn-danger" onClick={onConfirm} disabled={loading}>
               {loading
                 ? <><span className="spinner" style={{ width: '.9rem', height: '.9rem', borderWidth: 2 }} /> Eliminando...</>
-<<<<<<< HEAD
                 : <>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="3 6 5 6 21 6"/>
@@ -42,9 +37,6 @@ const ConfirmModal = ({ visible, producto, onConfirm, onCancel, loading }) => {
                     </svg>
                     Eliminar
                   </>}
-=======
-                : '🗑️ Eliminar'}
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
             </button>
           </div>
         </div>

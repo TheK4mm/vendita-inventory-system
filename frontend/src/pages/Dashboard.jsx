@@ -7,11 +7,7 @@ import toast from 'react-hot-toast';
 const StatCard = ({ icon, label, value, sub, color }) => (
   <div className="card" style={{ borderTop: `4px solid ${color}` }}>
     <div className="card-body" style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-<<<<<<< HEAD
       <div style={{ width: '2.5rem', height: '2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{icon}</div>
-=======
-      <div style={{ fontSize: '2.5rem', lineHeight: 1 }}>{icon}</div>
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
       <div>
         <div style={{ fontSize: '1.75rem', fontWeight: 800, color }}>{value}</div>
         <div style={{ fontWeight: 600, color: '#0F172A' }}>{label}</div>
@@ -100,7 +96,6 @@ const Dashboard = () => {
         {/* Encabezado */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-<<<<<<< HEAD
             <h1 style={{ fontSize: '1.5rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '.5rem' }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"/>
@@ -109,10 +104,6 @@ const Dashboard = () => {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
               Bienvenido, {usuario?.nombre}
-=======
-            <h1 style={{ fontSize: '1.5rem', fontWeight: 800 }}>
-              👋 Bienvenido, {usuario?.nombre}
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
             </h1>
             <p style={{ color: '#64748B', marginTop: '.25rem' }}>
               Panel de control — {new Date().toLocaleDateString('es-CO', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
@@ -121,7 +112,6 @@ const Dashboard = () => {
           <div style={{ display: 'flex', gap: '.75rem' }}>
             <button className="btn btn-outline"
               onClick={() => handleExport('pdf')} disabled={!!exportLoading}>
-<<<<<<< HEAD
               {exportLoading === 'pdf' ? '...' : <>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
@@ -143,13 +133,6 @@ const Dashboard = () => {
                 </svg>
                 Exportar Excel
               </>}
-=======
-              {exportLoading === 'pdf' ? '...' : '📄 Exportar PDF'}
-            </button>
-            <button className="btn btn-primary"
-              onClick={() => handleExport('xlsx')} disabled={!!exportLoading}>
-              {exportLoading === 'xlsx' ? '...' : '📊 Exportar Excel'}
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
             </button>
           </div>
         </div>
@@ -160,7 +143,6 @@ const Dashboard = () => {
           <>
             {/* KPIs */}
             <div className="grid-3" style={{ marginBottom: '1.5rem' }}>
-<<<<<<< HEAD
               <StatCard
                 icon={<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>}
                 label="Total Productos" value={stats.total} color="#6366F1" sub="en inventario"
@@ -185,28 +167,16 @@ const Dashboard = () => {
                 icon={<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>}
                 label="Precio Promedio" value={`$${stats.precioPromedio.toFixed(2)}`} color="#8B5CF6" sub="por producto"
               />
-=======
-              <StatCard icon="📦" label="Total Productos"  value={stats.total}          color="#6366F1" sub="en inventario" />
-              <StatCard icon="✅" label="Activos"          value={stats.activos}        color="#16A34A" sub="disponibles" />
-              <StatCard icon="🔴" label="Agotados"         value={stats.agotados}       color="#DC2626" sub="sin stock" />
-              <StatCard icon="🏷️" label="Categorías"       value={stats.categorias}     color="#D97706" sub="diferentes" />
-              <StatCard icon="💰" label="Valor Inventario" value={`$${stats.valorInventario.toLocaleString('es-CO', { minimumFractionDigits: 2 })}`} color="#0EA5E9" sub="precio × stock" />
-              <StatCard icon="📈" label="Precio Promedio"  value={`$${stats.precioPromedio.toFixed(2)}`} color="#8B5CF6" sub="por producto" />
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
             </div>
 
             <div className="grid-2" style={{ marginBottom: '1.5rem', alignItems: 'start' }}>
               {/* Productos por categoría */}
               <div className="card">
                 <div className="card-header">
-<<<<<<< HEAD
                   <h3 style={{ fontSize: '1rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '.5rem' }}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
                     Por Categoría
                   </h3>
-=======
-                  <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>📊 Por Categoría</h3>
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
                 </div>
                 <div className="card-body" style={{ display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
                   {Object.entries(stats.porCategoria)
@@ -232,14 +202,10 @@ const Dashboard = () => {
               {/* Top productos por precio */}
               <div className="card">
                 <div className="card-header">
-<<<<<<< HEAD
                   <h3 style={{ fontSize: '1rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '.5rem' }}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     Top 5 por Precio
                   </h3>
-=======
-                  <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>🏆 Top 5 por Precio</h3>
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
                 </div>
                 <div style={{ overflow: 'hidden' }}>
                   {stats.top5.map((p, i) => (
@@ -261,14 +227,10 @@ const Dashboard = () => {
             {/* Recientes */}
             <div className="card">
               <div className="card-header">
-<<<<<<< HEAD
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '.5rem' }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   Productos Recientes
                 </h3>
-=======
-                <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>🕐 Productos Recientes</h3>
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
               </div>
               <div className="table-wrapper">
                 <table>

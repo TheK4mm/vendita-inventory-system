@@ -243,7 +243,5 @@ el header `Authorization: Bearer <token>`.
    finalizar se abre la factura PDF automáticamente; usa "📄 Reimprimir" para volver
    a abrirla.
 4. **Caja:** *Caja* → verás el saldo acumulado, el histórico y el botón *Descargar PDF*.
-=======
 
-
---- 
+---

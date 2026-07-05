@@ -25,7 +25,6 @@ const connectPostgres = async () => {
       );
     `);
 
-<<<<<<< HEAD
     // Tabla auxiliar para tokens de recuperación de contraseña
     await client.query(`
       CREATE TABLE IF NOT EXISTS password_resets (
@@ -39,8 +38,6 @@ const connectPostgres = async () => {
     `);
     await client.query(`CREATE INDEX IF NOT EXISTS idx_password_resets_token ON password_resets (token_hash);`);
 
-=======
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
     client.release();
     console.log('✅ PostgreSQL conectado correctamente');
   } catch (err) {

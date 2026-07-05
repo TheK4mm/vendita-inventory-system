@@ -1,14 +1,10 @@
 const bcrypt = require('bcryptjs');
 const jwt    = require('jsonwebtoken');
-<<<<<<< HEAD
+
 const crypto = require('crypto');
 const { validationResult } = require('express-validator');
 const { pool } = require('../config/db.postgres');
 const { enviarCorreo } = require('../config/mailer');
-=======
-const { validationResult } = require('express-validator');
-const { pool } = require('../config/db.postgres');
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 
 // ── Registro ──────────────────────────────────────────────────────────────────
 const register = async (req, res) => {
@@ -131,7 +127,7 @@ const perfil = async (req, res) => {
   }
 };
 
-<<<<<<< HEAD
+
 // ── Solicitar recuperación de contraseña ─────────────────────────────────────
 const forgotPassword = async (req, res) => {
   const errors = validationResult(req);
@@ -277,6 +273,4 @@ const resetPassword = async (req, res) => {
 };
 
 module.exports = { register, login, perfil, forgotPassword, resetPassword };
-=======
-module.exports = { register, login, perfil };
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
+

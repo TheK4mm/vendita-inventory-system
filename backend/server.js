@@ -8,12 +8,10 @@ const connectPostgres = require('./config/db.postgres');
 const authRoutes     = require('./routes/authRoutes');
 const productoRoutes = require('./routes/productoRoutes');
 const exportRoutes   = require('./routes/exportRoutes');
-<<<<<<< HEAD
+
 const clienteRoutes  = require('./routes/clienteRoutes');
 const ventaRoutes    = require('./routes/ventaRoutes');
 const cajaRoutes     = require('./routes/cajaRoutes');
-=======
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 
 const app = express();
 
@@ -26,18 +24,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ── Rutas ─────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
+
 app.use('/api/auth',      authRoutes);
 app.use('/api/productos', productoRoutes);
 app.use('/api/export',    exportRoutes);
 app.use('/api/clientes',  clienteRoutes);
 app.use('/api/ventas',    ventaRoutes);
 app.use('/api/caja',      cajaRoutes);
-=======
-app.use('/api/auth',     authRoutes);
-app.use('/api/productos', productoRoutes);
-app.use('/api/export',   exportRoutes);
->>>>>>> d0118356b9a8b90fe4478bf2f476c700b3902978
 
 // ── Health check ──────────────────────────────────────────────────────────────
 app.get('/api/health', (_req, res) => {
